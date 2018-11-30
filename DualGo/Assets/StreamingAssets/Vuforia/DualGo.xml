@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="rain4" size="3.000000 4.740000" />
+    <ImageTarget name="communism34" size="3.000000 4.710000" />
+    <ImageTarget name="heuksari4" size="3.000000 4.783784" />
+    <ImageTarget name="heuksari3" size="3.000000 4.795918" />
+    <ImageTarget name="heuksari2" size="3.000000 4.711410" />
+    <ImageTarget name="heuksari1" size="3.000000 4.755102" />
+    <ImageTarget name="songhak4" size="3.000000 4.722973" />
+    <ImageTarget name="songhak3" size="3.000000 4.734694" />
+    <ImageTarget name="songhak2" size="3.000000 4.702703" />
+    <ImageTarget name="songhak1" size="3.000000 4.651007" />
+    <ImageTarget name="sakura4" size="3.000000 4.722973" />
+    <ImageTarget name="sakura3" size="3.000000 4.722973" />
+    <ImageTarget name="sakura2" size="3.000000 4.755102" />
+    <ImageTarget name="sakura1" size="3.000000 4.722973" />
+    <ImageTarget name="moran4" size="3.000000 4.711410" />
+    <ImageTarget name="moran3" size="3.000000 4.775510" />
+    <ImageTarget name="moran2" size="3.000000 4.743243" />
+    <ImageTarget name="moran1" size="3.000000 4.775510" />
+    <ImageTarget name="maejo4" size="3.000000 4.711410" />
+    <ImageTarget name="maejo3" size="3.000000 4.775510" />
+    <ImageTarget name="maejo2" size="3.000000 4.680000" />
+    <ImageTarget name="maejo1" size="3.000000 4.720000" />
+    <ImageTarget name="nancho4" size="3.000000 4.731544" />
+    <ImageTarget name="nancho3" size="3.000000 4.711410" />
+    <ImageTarget name="nancho2" size="3.000000 4.588235" />
+    <ImageTarget name="nancho1" size="3.000000 4.720000" />
+    <ImageTarget name="rain3" size="3.000000 4.668874" />
+    <ImageTarget name="rain2" size="3.000000 4.731544" />
+    <ImageTarget name="rain1" size="3.000000 4.740000" />
+    <ImageTarget name="odon4" size="3.000000 4.771812" />
+    <ImageTarget name="odon3" size="3.000000 4.708609" />
+    <ImageTarget name="odon2" size="3.000000 4.857143" />
+    <ImageTarget name="odon1" size="3.000000 4.751678" />
+    <ImageTarget name="maple4" size="3.000000 4.688742" />
+    <ImageTarget name="maple3" size="3.000000 4.700000" />
+    <ImageTarget name="maple2" size="3.000000 4.720000" />
+    <ImageTarget name="maple1" size="3.000000 4.720000" />
+    <ImageTarget name="hongsari4" size="3.000000 4.680000" />
+    <ImageTarget name="hongsari3" size="3.000000 4.629139" />
+    <ImageTarget name="hongsari2" size="3.000000 4.660000" />
+    <ImageTarget name="hongsari1" size="3.000000 4.680000" />
+    <ImageTarget name="gukjun4" size="3.000000 4.740000" />
+    <ImageTarget name="gukjun3" size="3.000000 4.771812" />
+    <ImageTarget name="gukjun2" size="3.000000 4.688742" />
+    <ImageTarget name="gukjun1" size="3.000000 4.771812" />
+    <ImageTarget name="communism2" size="3.000000 4.751678" />
+    <ImageTarget name="communism1" size="3.000000 4.760000" />
+  </Tracking>
+</QCARConfig>
