@@ -30,17 +30,8 @@ public class ScoreManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         ///////////////////혜란//////////////////////
-        score = 0;
-        multiple = 1;
-        text_score.text = score+"";
-        text_multiple.text = 1 + "";
-        ob_X.SetActive(false);
-        ob_multiple.SetActive(false);
-        ob_goorstop.SetActive(false);
-        ob_gobtn.SetActive(false);
-        ob_stopbtn.SetActive(false);
+        initialSetting();
 
-        state_7 = false;
         ///////////////////예원//////////////////////
 
     }
@@ -50,20 +41,71 @@ public class ScoreManager : MonoBehaviour {
     {
         ///////////////////혜란//////////////////////
         checkScore7();
+        
+        text_score.text = score + "";
+        text_multiple.text = multiple + "";
 
+        if(multiple > 1)
+        {
+            ob_X.SetActive(true);
+            ob_multiple.SetActive(true);
+        }
         ///////////////////예원//////////////////////
 
     }
 
     ///////////////////혜란//////////////////////
+    void initialSetting()
+    {
+        score = 0;
+        multiple = 1;
+        ob_X.SetActive(false);
+        ob_multiple.SetActive(false);
+        ob_goorstop.SetActive(false);
+        ob_gobtn.SetActive(false);
+        ob_stopbtn.SetActive(false);
+
+        state_7 = false;
+        go_num = 0;
+        mine = 0;
+        spectroscopy = false;
+        dan = 0;
+        hongdan = 0;
+        chungdan = 0;
+        chodan = 0;
+    }
     /*
 1. 광
 > 3장 3점(단, 비광 포함 시 2점) ‘삼광’
-> 4장 점 ‘사광’, 5장 5점 ‘오광’
+> 4장 4점 ‘사광’, 5장 5점 ‘오광’
       */
-      void getMine()
+    void getMine()
     {
+        mine++;
 
+        if (mine == 3)
+        {
+            if (spectroscopy)
+            {
+                score = score + 2;
+                if (state_7) goStop();
+            }
+            else
+            {
+                score = score + 3;
+                if (state_7) goStop();
+            }
+        }
+        if (mine == 4)
+        {
+            score = score + 4;
+            if (state_7) goStop();
+        }
+        if (mine == 5)
+        {
+            score = score + 5;
+            if (state_7) goStop();
+        }
     }
     /*
 4. 띠
@@ -72,9 +114,41 @@ public class ScoreManager : MonoBehaviour {
 > ‘홍단’ 3장 3점
 > ‘초단’ 3장 3점
      */
-     void getBand()
+     void getDan()
     {
-
+        dan++;
+        if (dan == 5)
+        {
+            score++;
+            if (state_7) goStop();
+        }
+    }
+    void getHonddan()
+    {
+        hongdan++;
+        if (hongdan == 3)
+        {
+            score++;
+            if (state_7) goStop();
+        }
+    }
+    void getChungdan()
+    {
+        chungdan++;
+        if (chungdan == 3)
+        {
+            score++;
+            if (state_7) goStop();
+        }
+    }
+    void getChodan()
+    {
+        chodan++;
+        if (chodan == 3)
+        {
+            score++;
+            if (state_7) goStop();
+        }
     }
     /*
 6. 고/스톱
@@ -145,6 +219,10 @@ public class ScoreManager : MonoBehaviour {
                 multiple = multiple * 2;
                 break;
         }
+
+        ob_goorstop.SetActive(false);
+        ob_gobtn.SetActive(false);
+        ob_stopbtn.SetActive(false);
     }
 
     void goResultScene()
