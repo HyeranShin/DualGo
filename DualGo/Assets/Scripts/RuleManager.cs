@@ -2,32 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RuleManager : MonoBehaviour {
+public class RuleManager : MonoBehaviour
+{
     public GameObject rule1;
     public GameObject rule2;
     public GameObject rule3;
+    public GameObject text;
+    private int rule_state;
 
-	// Use this for initialization
-	void Start () {
-        rule2.SetActive(false);
-        rule3.SetActive(false);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
+        rule_state = 0;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            rule1.SetActive(false);
-            rule2.SetActive(true);
-            /*여기서 rule2 -> 3로 넘어가는 부분
-            if (rule2.activeSelf == true && Input.GetMouseButton(0))
+            switch (rule_state)
             {
-                rule2.SetActive(false);
-                rule3.SetActive(true);
+                case 0:
+                    rule1.SetActive(false);
+                    rule2.SetActive(true);
+                    rule_state++;
+                    break;
+                case 1:
+                    rule2.SetActive(false);
+                    rule3.SetActive(true);
+                    text.SetActive(false);
+                    break;
             }
-            */
-        }        
-        
-	}
- 
+        }
+
+    }
+
 }
