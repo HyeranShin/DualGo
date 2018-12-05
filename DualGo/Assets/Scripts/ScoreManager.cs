@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour {
     public Text text_score;
@@ -25,6 +26,12 @@ public class ScoreManager : MonoBehaviour {
     private int hongdan;
     private int chungdan; 
     private int chodan;
+    private int godori;
+    private int tens; //열끗
+    private int pi; //피
+    private bool double_pi; //쌍피
+    private bool mung_dda; //멍따 체크 
+
 
     // ********점수 얻는 함수마다 if (state_7) goStop(); 넣어주세용
     // Use this for initialization
@@ -73,6 +80,12 @@ public class ScoreManager : MonoBehaviour {
         hongdan = 0;
         chungdan = 0;
         chodan = 0;
+
+        ////////예원 추가///////
+        godori = 0;
+        tens = 0;
+        pi = 0;
+        double_pi = 0;
     }
     /*
 1. 광
@@ -228,9 +241,118 @@ public class ScoreManager : MonoBehaviour {
     void goResultScene()
     {
         total_score = score * multiple;
-        Application.LoadLevel("ResultScene");
+        SceneManager.LoadScene("ResultScene"); //이거 밑줄 떠서 그냥 내가 고쳤어!
     }
 
     ///////////////////예원//////////////////////
+    /////고도리 열끗 관계 생각 해 보기 (둘 다 동시에 + ?)
+/*
+3. 고도리
+고도리 3장 > 5점
+*/
+    void getGodori()
+    {
+        godori++;
+        if (godori == 3)
+        {
+            score = score + 5;
+            if (state_7) goStop();
+        }
+    }
+    //멍따 x2 어디에 추가할지
+/*
+2. 열끗
+5장 > 1점
+6~9장 > 1장에 1점씩 추가
+*/
+    void getTens()
+    {
+        tens++;
+        if (tens == 5)
+        {
+            score = score + 1;
+            if (state_7) goStop();
+        }
+        if (tens == 6)
+        {
+            score = score + 2;
+            if (state_7) goStop();
+        }
 
+        if (tens == 7) //멍따
+        {
+            score = score + 3;
+            mung_dda = true;
+            if (state_7) goStop();
+        }
+        if (tens == 8)
+        {
+            score = score + 4;
+            mung_dda = true;
+            if (state_7) goStop();
+        }
+        if (tens == 9)
+        {
+            score = score + 5;
+            mung_dda = true;
+            if (state_7) goStop();
+        }
+
+    }
+/*
+5. 피
+10장 > 1점
+11~22장 > 1장 당 1점 추가
+*/
+    //// 쌍피 계산? 증가 하는게 +1 일지,,,,
+    void getPi()
+    {
+        if (double_pi)
+        {
+            pi = pi + 2;
+        }
+        else pi++;
+
+        if (pi == 10)
+        {
+            score = score + 1;
+            if (state_7) goStop();
+        }
+        if (pi == 11)
+        {
+            score = score + 2;
+            if (state_7) goStop();
+        }
+        if (pi == 12)
+        {
+            score = score + 3;
+            if (state_7) goStop();
+        }
+        if (pi == 13)
+        {
+            score = score + 4;
+            if (state_7) goStop();
+        }
+        if (pi == 14)
+        {
+            score = score + 5;
+            if (state_7) goStop();
+        }
+        if (pi == 15)
+        {
+            score = score + 6;
+            if (state_7) goStop();
+        }
+        if (pi == 16)
+        {
+            score = score + 7;
+            if (state_7) goStop();
+        }
+        if (pi == 17)
+        {
+            score = score + 8;
+            if (state_7) goStop();
+        }
+        //22까지 할지 말지
+    }
 }
