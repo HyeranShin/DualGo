@@ -14,6 +14,7 @@ public class ScoreManager : MonoBehaviour {
     public Button btn_go;
     public Button btn_stop;
 
+    static int total_score;
     private int score;
     private int multiple;
     private int go_num;
@@ -26,7 +27,6 @@ public class ScoreManager : MonoBehaviour {
     private int chodan;
 
     // ********점수 얻는 함수마다 if (state_7) goStop(); 넣어주세용
-
     // Use this for initialization
     void Start () {
         ///////////////////혜란//////////////////////
@@ -227,6 +227,7 @@ public class ScoreManager : MonoBehaviour {
 
     void goResultScene()
     {
+        total_score = score * multiple;
         Application.LoadLevel("ResultScene");
     }
 
