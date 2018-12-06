@@ -85,7 +85,7 @@ public class ScoreManager : MonoBehaviour {
         godori = 0;
         tens = 0;
         pi = 0;
-        double_pi = 0;
+        double_pi = false;
     }
     /*
 1. 광
@@ -250,7 +250,7 @@ public class ScoreManager : MonoBehaviour {
 3. 고도리
 고도리 3장 > 5점
 */
-    void getGodori()
+    public void getGodori()
     {
         godori++;
         if (godori == 3)
@@ -265,7 +265,7 @@ public class ScoreManager : MonoBehaviour {
 5장 > 1점
 6~9장 > 1장에 1점씩 추가
 */
-    void getTens()
+    public void getTens()
     {
         tens++;
         if (tens == 5)
@@ -275,25 +275,25 @@ public class ScoreManager : MonoBehaviour {
         }
         if (tens == 6)
         {
-            score = score + 2;
+            score = score + 1;
             if (state_7) goStop();
         }
 
         if (tens == 7) //멍따
         {
-            score = score + 3;
+            score = score + 1;
             mung_dda = true;
             if (state_7) goStop();
         }
         if (tens == 8)
         {
-            score = score + 4;
+            score = score + 1;
             mung_dda = true;
             if (state_7) goStop();
         }
         if (tens == 9)
         {
-            score = score + 5;
+            score = score + 1;
             mung_dda = true;
             if (state_7) goStop();
         }
@@ -305,8 +305,9 @@ public class ScoreManager : MonoBehaviour {
 11~22장 > 1장 당 1점 추가
 */
     //// 쌍피 계산? 증가 하는게 +1 일지,,,,
-    void getPi()
+    public void getPi()
     {
+        Debug.Log("getScore");
         if (double_pi)
         {
             pi = pi + 2;
@@ -320,37 +321,37 @@ public class ScoreManager : MonoBehaviour {
         }
         if (pi == 11)
         {
-            score = score + 2;
+            score = score + 1;
             if (state_7) goStop();
         }
         if (pi == 12)
         {
-            score = score + 3;
+            score = score + 1;
             if (state_7) goStop();
         }
         if (pi == 13)
         {
-            score = score + 4;
+            score = score + 1;
             if (state_7) goStop();
         }
         if (pi == 14)
         {
-            score = score + 5;
+            score = score + 1;
             if (state_7) goStop();
         }
         if (pi == 15)
         {
-            score = score + 6;
+            score = score + 1;
             if (state_7) goStop();
         }
         if (pi == 16)
         {
-            score = score + 7;
+            score = score + 1;
             if (state_7) goStop();
         }
         if (pi == 17)
         {
-            score = score + 8;
+            score = score + 1;
             if (state_7) goStop();
         }
         //22까지 할지 말지
