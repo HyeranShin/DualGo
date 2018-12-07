@@ -17,4 +17,7 @@ public class CardClick : MonoBehaviour {
     {
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getGodori();
     }
+
+
+  
 }

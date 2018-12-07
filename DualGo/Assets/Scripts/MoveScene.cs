@@ -10,4 +10,5 @@ public class MoveScene : MonoBehaviour {
     {
         SceneManager.LoadScene (SceneName);
     }
+
 }
