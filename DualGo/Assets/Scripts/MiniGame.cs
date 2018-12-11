@@ -7,6 +7,7 @@ public class MiniGame : MonoBehaviour {
     public GameObject canvas_godori;
     public GameObject canvas_gwang;
     public GameObject canvas_ssang;
+    public GameObject canvas_bingo;
     public GameObject image;
 
 	public void mini_click()
