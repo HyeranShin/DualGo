@@ -17,7 +17,14 @@ public class CardClick : MonoBehaviour {
     {
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getGodori();
     }
-
+    public void cardClickDan()
+    {
+        GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getDan();
+    }
+    public void cardClickGwang()
+    {
+        GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getMine();
+    }
 
   
 }

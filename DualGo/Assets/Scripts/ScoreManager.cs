@@ -92,7 +92,7 @@ public class ScoreManager : MonoBehaviour {
 > 3장 3점(단, 비광 포함 시 2점) ‘삼광’
 > 4장 4점 ‘사광’, 5장 5점 ‘오광’
       */
-    void getMine()
+    public void getMine()
     {
         mine++;
 
@@ -127,7 +127,7 @@ public class ScoreManager : MonoBehaviour {
 > ‘홍단’ 3장 3점
 > ‘초단’ 3장 3점
      */
-     void getDan()
+     public void getDan()
     {
         dan++;
         if (dan == 5)
@@ -241,6 +241,7 @@ public class ScoreManager : MonoBehaviour {
     void goResultScene()
     {
         total_score = score * multiple;
+        ResultScore.result = total_score;
         SceneManager.LoadScene("ResultScene"); //이거 밑줄 떠서 그냥 내가 고쳤어!
     }
 
