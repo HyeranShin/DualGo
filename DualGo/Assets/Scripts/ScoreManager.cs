@@ -29,8 +29,8 @@ public class ScoreManager : MonoBehaviour {
     private int godori;
     private int tens; //열끗
     private int pi; //피
-    private bool double_pi; //쌍피
-    private bool mung_dda; //멍따 체크 
+    public bool double_pi; //쌍피
+    public bool mung_dda; //멍따 체크 
 
 
     // ********점수 얻는 함수마다 if (state_7) goStop(); 넣어주세용

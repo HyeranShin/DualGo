@@ -7,6 +7,7 @@ public class RuleManager : MonoBehaviour
     public GameObject rule1;
     public GameObject rule2;
     public GameObject rule3;
+    public GameObject modeChange;
     public GameObject text;
     private int rule_state;
 
@@ -31,6 +32,11 @@ public class RuleManager : MonoBehaviour
                 case 1:
                     rule2.SetActive(false);
                     rule3.SetActive(true);
+                    rule_state++;
+                    break;
+                case 2:
+                    rule3.SetActive(false);
+                    modeChange.SetActive(true);
                     text.SetActive(false);
                     break;
             }
