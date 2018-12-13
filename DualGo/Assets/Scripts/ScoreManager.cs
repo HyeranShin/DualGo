@@ -175,6 +175,7 @@ public class ScoreManager : MonoBehaviour {
         if (score * multiple >= 7)
         {
             if (!state_7) state_7 = true;
+            goStop();
         }
     }
     void goStop()
