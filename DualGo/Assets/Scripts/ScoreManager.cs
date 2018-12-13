@@ -136,7 +136,7 @@ public class ScoreManager : MonoBehaviour {
             if (state_7) goStop();
         }
     }
-    void getHonddan()
+    public void getHongdan()
     {
         hongdan++;
         if (hongdan == 3)
@@ -145,7 +145,7 @@ public class ScoreManager : MonoBehaviour {
             if (state_7) goStop();
         }
     }
-    void getChungdan()
+    public void getChungdan()
     {
         chungdan++;
         if (chungdan == 3)
@@ -154,7 +154,7 @@ public class ScoreManager : MonoBehaviour {
             if (state_7) goStop();
         }
     }
-    void getChodan()
+    public void getChodan()
     {
         chodan++;
         if (chodan == 3)

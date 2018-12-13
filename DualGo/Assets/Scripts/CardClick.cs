@@ -27,6 +27,21 @@ public class CardClick : MonoBehaviour {
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getDan();
         button.SetActive(false);
     }
+    public void cardClickHongdan()
+    {
+        GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getHongdan();
+        button.SetActive(false);
+    }
+    public void cardClickChungdan()
+    {
+        GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getChungdan();
+        button.SetActive(false);
+    }
+    public void cardClickChodan()
+    {
+        GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getChodan();
+        button.SetActive(false);
+    }
     public void cardClickGwang()
     {
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getMine();
