@@ -34,6 +34,7 @@ public class MiniGame : MonoBehaviour {
     public void click_wrong()
     {
         canvas_wrong.SetActive(true);
+        
     }
     void Update()
     {

@@ -48,11 +48,20 @@ public class CardClick : MonoBehaviour {
         button.SetActive(false);
     }
     public void cardClickSSang()
-    {
-        ScoreManager isDouble = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
-        isDouble.double_pi = true;
+    {//여기서 바꾼 doubl_pi 값이 스코어 매니저에 적용 되게,,,
+        ScoreManager.double_pi = true;
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getPi();
         button.SetActive(false);
+    }
+    public void mungUI_Click()
+    {
+        ScoreManager isMung = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        isMung.mung_UI.SetActive(false);
+    }
+    public void godoriUI_Click()
+    {
+        ScoreManager isGodori = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        isGodori.godori_UI.SetActive(false);
     }
 
 

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ScoreManager : MonoBehaviour {
+public class ScoreManager : MonoBehaviour
+{
     public Text text_score;
     public Text text_multiple;
     public GameObject ob_X;
@@ -14,6 +15,8 @@ public class ScoreManager : MonoBehaviour {
     public GameObject ob_goorstop;
     public Button btn_go;
     public Button btn_stop;
+    public GameObject mung_UI;
+    public GameObject godori_UI;
 
     static int total_score;
     private int score;
@@ -24,18 +27,19 @@ public class ScoreManager : MonoBehaviour {
     private bool spectroscopy;  // 비광
     private int dan;   // 띠
     private int hongdan;
-    private int chungdan; 
+    private int chungdan;
     private int chodan;
     private int godori;
     private int tens; //열끗
     private int pi; //피
-    public bool double_pi; //쌍피
+    public static bool double_pi; //쌍피
     public bool mung_dda; //멍따 체크 
 
 
     // ********점수 얻는 함수마다 if (state_7) goStop(); 넣어주세용
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         ///////////////////혜란//////////////////////
         initialSetting();
 
@@ -44,15 +48,15 @@ public class ScoreManager : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
         ///////////////////혜란//////////////////////
         checkScore7();
-        
+
         text_score.text = score + "";
         text_multiple.text = multiple + "";
 
-        if(multiple > 1)
+        if (multiple > 1)
         {
             ob_X.SetActive(true);
             ob_multiple.SetActive(true);
@@ -127,7 +131,7 @@ public class ScoreManager : MonoBehaviour {
 > ‘홍단’ 3장 3점
 > ‘초단’ 3장 3점
      */
-     public void getDan()
+    public void getDan()
     {
         dan++;
         if (dan == 5)
@@ -188,9 +192,9 @@ public class ScoreManager : MonoBehaviour {
         btn_stop.onClick.AddListener(goResultScene);
     }
 
-   void goScore()
+    void goScore()
     {
-        switch(go_num)
+        switch (go_num)
         {
             case 0: // 1고
                 go_num++;
@@ -248,25 +252,26 @@ public class ScoreManager : MonoBehaviour {
 
     ///////////////////예원//////////////////////
     /////고도리 열끗 관계 생각 해 보기 (둘 다 동시에 + ?)
-/*
-3. 고도리
-고도리 3장 > 5점
-*/
+    /*
+    3. 고도리
+    고도리 3장 > 5점
+    */
     public void getGodori()
     {
         godori++;
         if (godori == 3)
         {
             score = score + 5;
+            godori_UI.SetActive(true);
             if (state_7) goStop();
         }
     }
     //멍따 x2 어디에 추가할지
-/*
-2. 열끗
-5장 > 1점
-6~9장 > 1장에 1점씩 추가
-*/
+    /*
+    2. 열끗
+    5장 > 1점
+    6~9장 > 1장에 1점씩 추가
+    */
     public void getTens()
     {
         tens++;
@@ -285,6 +290,7 @@ public class ScoreManager : MonoBehaviour {
         {
             score = score + 1;
             mung_dda = true;
+            mung_UI.SetActive(true);
             if (state_7) goStop();
         }
         if (tens == 8)
@@ -301,14 +307,14 @@ public class ScoreManager : MonoBehaviour {
         }
 
     }
-/*
-5. 피
-10장 > 1점
-11~22장 > 1장 당 1점 추가
-*/
+    /*
+    5. 피
+    10장 > 1점
+    11~22장 > 1장 당 1점 추가
+    */
     //// 쌍피 계산? 증가 하는게 +1 일지,,,,
     public void getPi()
-    {
+    {//두번째 부터 +2 안되는거
         Debug.Log("getScore");
         if (double_pi)
         {
@@ -357,5 +363,8 @@ public class ScoreManager : MonoBehaviour {
             if (state_7) goStop();
         }
         //22까지 할지 말지
+
+
     }
+  
 }
