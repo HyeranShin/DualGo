@@ -90,6 +90,7 @@ public class ScoreManager : MonoBehaviour
         tens = 0;
         pi = 0;
         double_pi = false;
+
     }
     /*
 1. 광
@@ -316,9 +317,11 @@ public class ScoreManager : MonoBehaviour
     public void getPi()
     {//두번째 부터 +2 안되는거
         Debug.Log("getScore");
+        Debug.Log(double_pi);
         if (double_pi)
         {
             pi = pi + 2;
+            score = score + 1;
         }
         else pi++;
 
@@ -362,6 +365,37 @@ public class ScoreManager : MonoBehaviour
             score = score + 1;
             if (state_7) goStop();
         }
+        if (pi == 18)
+        {
+            score = score + 1;
+            if (state_7) goStop();
+        }
+        if (pi == 19)
+        {
+            score = score + 1;
+            if (state_7) goStop();
+            
+        }
+        if (pi == 20)
+        {
+            score = score + 1;
+            if (state_7) goStop();
+
+        }
+        if (pi == 21)
+        {
+            score = score + 1;
+            if (state_7) goStop();
+
+        }
+        if (pi == 2)
+        {
+            score = score + 1;
+            if (state_7) goStop();
+
+        }
+
+
         //22까지 할지 말지
 
 

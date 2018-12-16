@@ -52,6 +52,7 @@ public class CardClick : MonoBehaviour {
         ScoreManager.double_pi = true;
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().getPi();
         button.SetActive(false);
+        //Debug.Log(ScoreManager.double_pi);
     }
     public void mungUI_Click()
     {
