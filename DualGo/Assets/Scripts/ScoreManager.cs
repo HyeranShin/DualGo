@@ -35,6 +35,7 @@ public class ScoreManager : MonoBehaviour
     public GameObject pi_UI;
 
     static int total_score;
+    private int temp;
     private int score;
     private int multiple;
     private int go_num;
@@ -50,6 +51,15 @@ public class ScoreManager : MonoBehaviour
     private int pi; //피
     public static bool double_pi; //쌍피
     public bool mung_dda; //멍따 체크 
+
+    private int go1_state;
+    private int go2_state;
+    private int go3_state;
+    private int go4_state;
+    private int go5_state;
+    private int go6_state;
+    private int go7_state;
+    private int go8_state;
 
 
     // ********점수 얻는 함수마다 if (state_7) goStop(); 넣어주세용
@@ -93,6 +103,7 @@ public class ScoreManager : MonoBehaviour
         ob_stopbtn.SetActive(false);
 
         state_7 = false;
+        temp = 0;
         go_num = 0;
         mine = 0;
         spectroscopy = false;
@@ -101,8 +112,17 @@ public class ScoreManager : MonoBehaviour
         chungdan = 0;
         chodan = 0;
 
-        ////////예원 추가///////
-        godori = 0;
+        go1_state = 0;
+        go2_state = 0;
+        go3_state = 0;
+        go4_state = 0;
+        go5_state = 0;
+        go6_state = 0;
+        go7_state = 0;
+        go8_state = 0;
+
+    ////////예원 추가///////
+    godori = 0;
         tens = 0;
         pi = 0;
         double_pi = false;
@@ -244,7 +264,11 @@ public class ScoreManager : MonoBehaviour
         if (score * multiple >= 7)
         {
             if (!state_7) state_7 = true;
-            goStop();
+            if (temp == 0)
+            {
+                goStop();
+                temp = 1;
+            }
         }
     }
     void goStop()
@@ -267,52 +291,60 @@ public class ScoreManager : MonoBehaviour
         switch (go_num)
         {
             case 0: // 1고
-                go_num++;
+                go_num = 1;
                 score++;
                 go1_UI.SetActive(true);
                 Invoke("go1_", 1f);
+                go1_state = 1;
                 break;
             case 1: // 2고
-                go_num++;
+                go_num = 2;
                 score++;
                 go2_UI.SetActive(true);
                 Invoke("go2_", 1f);
+                go2_state = 1;
                 break;
             case 2: // 3고
-                go_num++;
+                go_num = 3;
                 multiple = multiple * 2;
                 go3_UI.SetActive(true);
                 Invoke("go3_", 1f);
+                go3_state = 1;
                 break;
             case 3: // 4고
-                go_num++;
+                go_num = 4;
                 multiple = multiple * 2;
                 go4_UI.SetActive(true);
-                Invoke("go4_", 1f);
+                Invoke("go4_", 1f);                
+                go4_state = 1;
                 break;
             case 4: // 5고
-                go_num++;
+                go_num = 5;
                 multiple = multiple * 2;
                 go5_UI.SetActive(true);
                 Invoke("go5_", 1f);
+                go5_state = 1;
                 break;
             case 5: // 6고
-                go_num++;
+                go_num = 6;
                 multiple = multiple * 2;
                 go6_UI.SetActive(true);
                 Invoke("go6_", 1f);
+                go6_state = 1;
                 break;
             case 6: // 7고
-                go_num++;
+                go_num = 7;
                 multiple = multiple * 2;
                 go7_UI.SetActive(true);
                 Invoke("go7_", 1f);
+                go7_state = 1;
                 break;
             case 7: // 8고
-                go_num++;
+                go_num = 8;
                 multiple = multiple * 2;
                 go8_UI.SetActive(true);
                 Invoke("go8_", 1f);
+                go8_state = 1;
                 break;
         }
 
@@ -437,7 +469,6 @@ public class ScoreManager : MonoBehaviour
         if (double_pi)
         {
             pi = pi + 2;
-            score = score + 1;
         }
         else pi++;
 
@@ -506,7 +537,7 @@ public class ScoreManager : MonoBehaviour
             if (state_7) goStop();
 
         }
-        if (pi == 2)
+        if (pi == 22)
         {
             score = score + 1;
             if (state_7) goStop();
