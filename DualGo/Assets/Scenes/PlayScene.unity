@@ -1170,7 +1170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &86508663
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12279,7 +12279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &899549814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18051,7 +18051,7 @@ MonoBehaviour:
   go6_UI: {fileID: 588540488}
   go7_UI: {fileID: 1182671519}
   go8_UI: {fileID: 939352137}
-  pi_UI: {fileID: 939352137}
+  pi_UI: {fileID: 20764288}
   mung_dda: 0
 --- !u!4 &1302258116
 Transform:
@@ -25135,7 +25135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1825482227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25166,7 +25166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -25878,7 +25878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1880545758
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28183,7 +28183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2048622653
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28866,7 +28866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2134356688
 RectTransform:
   m_ObjectHideFlags: 0
