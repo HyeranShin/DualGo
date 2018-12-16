@@ -478,74 +478,91 @@ public class ScoreManager : MonoBehaviour
             Invoke("pi_", 1f);
             score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 11)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 12)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 13)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 14)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 15)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 16)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 17)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
+            double_pi = false;
         }
         if (pi == 18)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
         }
         if (pi == 19)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
-            
+
         }
         if (pi == 20)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
 
         }
         if (pi == 21)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
 
         }
         if (pi == 22)
         {
-            score = score + 1;
+            if (double_pi == true) score = score + 2;
+            else score = score + 1;
             if (state_7) goStop();
 
         }
-
-
-        //22까지 할지 말지
 
 
     }
