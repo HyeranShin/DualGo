@@ -11,10 +11,11 @@ public class MiniGame : MonoBehaviour {
     public GameObject canvas_wrong;
     public GameObject image;
 
+    private int index;
+
 	public void mini_click()
     {
         image.SetActive(true);
-        
     }
     public void click_godori()
     {

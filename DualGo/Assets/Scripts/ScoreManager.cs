@@ -17,6 +17,22 @@ public class ScoreManager : MonoBehaviour
     public Button btn_stop;
     public GameObject mung_UI;
     public GameObject godori_UI;
+    public GameObject mine3_UI;
+    public GameObject mine4_UI;
+    public GameObject mine5_UI;
+    public GameObject dan5_UI;
+    public GameObject chodan_UI;
+    public GameObject chungdan_UI;
+    public GameObject hongdan_UI;
+    public GameObject go1_UI;
+    public GameObject go2_UI;
+    public GameObject go3_UI;
+    public GameObject go4_UI;
+    public GameObject go5_UI;   
+    public GameObject go6_UI;
+    public GameObject go7_UI;
+    public GameObject go8_UI;
+    public GameObject pi_UI;
 
     static int total_score;
     private int score;
@@ -105,24 +121,48 @@ public class ScoreManager : MonoBehaviour
             if (spectroscopy)
             {
                 score = score + 2;
-                if (state_7) goStop();
             }
             else
             {
                 score = score + 3;
-                if (state_7) goStop();
             }
+            mine3_UI.SetActive(true);
+            Invoke("mine3", 1f);
+            if (state_7) goStop();
         }
         if (mine == 4)
         {
-            score = score + 4;
+            if (spectroscopy)
+            {
+                score = score + 2;
+            }
+            else
+            {
+                score = score + 1;
+            }
+            mine4_UI.SetActive(true);
+            Invoke("mine4", 1f);
             if (state_7) goStop();
         }
         if (mine == 5)
         {
-            score = score + 5;
+            score = score + 1;
+            mine5_UI.SetActive(true);
+            Invoke("mine5", 1f);
             if (state_7) goStop();
         }
+    }
+    void mine3()
+    {
+        mine3_UI.SetActive(false);
+    }
+    void mine4()
+    {
+        mine4_UI.SetActive(false);
+    }
+    void mine5()
+    {
+        mine5_UI.SetActive(false);
     }
     /*
 4. 띠
@@ -137,6 +177,8 @@ public class ScoreManager : MonoBehaviour
         if (dan == 5)
         {
             score++;
+            dan5_UI.SetActive(true);
+            Invoke("dan5", 1f);
             if (state_7) goStop();
         }
     }
@@ -146,6 +188,8 @@ public class ScoreManager : MonoBehaviour
         if (hongdan == 3)
         {
             score++;
+            hongdan_UI.SetActive(true);
+            Invoke("hongdan_", 1f);
             if (state_7) goStop();
         }
     }
@@ -155,6 +199,8 @@ public class ScoreManager : MonoBehaviour
         if (chungdan == 3)
         {
             score++;
+            chungdan_UI.SetActive(true);
+            Invoke("chungdan_", 1f);
             if (state_7) goStop();
         }
     }
@@ -164,8 +210,26 @@ public class ScoreManager : MonoBehaviour
         if (chodan == 3)
         {
             score++;
+            chodan_UI.SetActive(true);
+            Invoke("chodan_", 1f);
             if (state_7) goStop();
         }
+    }
+    void dan5()
+    {
+        dan5_UI.SetActive(false);
+    }
+    void chodan_()
+    {
+        chodan_UI.SetActive(false);
+    }
+    void hongdan_()
+    {
+        hongdan_UI.SetActive(false);
+    }
+    void chungdan_()
+    {
+        chungdan_UI.SetActive(false);
     }
     /*
 6. 고/스톱
@@ -194,53 +258,64 @@ public class ScoreManager : MonoBehaviour
 
     void goScore()
     {
+        Debug.Log("goScore에 들어오는지");
+        ob_goorstop.SetActive(false);
+        ob_gobtn.SetActive(false);
+        ob_stopbtn.SetActive(false);
+
         switch (go_num)
         {
             case 0: // 1고
                 go_num++;
                 score++;
+                go1_UI.SetActive(true);
+                Invoke("go1_", 1f);
                 break;
             case 1: // 2고
                 go_num++;
                 score++;
+                go2_UI.SetActive(true);
+                Invoke("go2_", 1f);
                 break;
             case 2: // 3고
                 go_num++;
                 multiple = multiple * 2;
+                go3_UI.SetActive(true);
+                Invoke("go3_", 1f);
                 break;
             case 3: // 4고
                 go_num++;
                 multiple = multiple * 2;
+                go4_UI.SetActive(true);
+                Invoke("go4_", 1f);
                 break;
             case 4: // 5고
                 go_num++;
                 multiple = multiple * 2;
+                go5_UI.SetActive(true);
+                Invoke("go5_", 1f);
                 break;
             case 5: // 6고
                 go_num++;
                 multiple = multiple * 2;
+                go6_UI.SetActive(true);
+                Invoke("go6_", 1f);
                 break;
             case 6: // 7고
                 go_num++;
                 multiple = multiple * 2;
+                go7_UI.SetActive(true);
+                Invoke("go7_", 1f);
                 break;
             case 7: // 8고
                 go_num++;
                 multiple = multiple * 2;
-                break;
-            case 8: // 9고
-                go_num++;
-                multiple = multiple * 2;
-                break;
-            case 9: // 10고
-                go_num++;
-                multiple = multiple * 2;
+                go8_UI.SetActive(true);
+                Invoke("go8_", 1f);
                 break;
         }
 
-        ob_goorstop.SetActive(false);
-        ob_gobtn.SetActive(false);
-        ob_stopbtn.SetActive(false);
+        
     }
 
     void goResultScene()
@@ -249,7 +324,38 @@ public class ScoreManager : MonoBehaviour
         ResultScore.result = total_score;
         SceneManager.LoadScene("ResultScene"); //이거 밑줄 떠서 그냥 내가 고쳤어!
     }
-
+    void go1_()
+    {
+        go1_UI.SetActive(false);
+    }
+    void go2_()
+    {
+        go2_UI.SetActive(false);
+    }
+    void go3_()
+    {
+        go3_UI.SetActive(false);
+    }
+    void go4_()
+    {
+        go4_UI.SetActive(false);
+    }
+    void go5_()
+    {
+        go5_UI.SetActive(false);
+    }
+    void go6_()
+    {
+        go6_UI.SetActive(false);
+    }
+    void go7_()
+    {
+        go7_UI.SetActive(false);
+    }
+    void go8_()
+    {
+        go8_UI.SetActive(false);
+    }
     ///////////////////예원//////////////////////
     /////고도리 열끗 관계 생각 해 보기 (둘 다 동시에 + ?)
     /*
@@ -263,8 +369,13 @@ public class ScoreManager : MonoBehaviour
         {
             score = score + 5;
             godori_UI.SetActive(true);
+            Invoke("godori_", 1f);
             if (state_7) goStop();
         }
+    }
+    void godori_()
+    {
+        godori_UI.SetActive(false);
     }
     //멍따 x2 어디에 추가할지
     /*
@@ -291,6 +402,7 @@ public class ScoreManager : MonoBehaviour
             score = score + 1;
             mung_dda = true;
             mung_UI.SetActive(true);
+            Invoke("mung_", 1f);
             if (state_7) goStop();
         }
         if (tens == 8)
@@ -306,6 +418,10 @@ public class ScoreManager : MonoBehaviour
             if (state_7) goStop();
         }
 
+    }
+    void mung_()
+    {
+        mung_UI.SetActive(false);
     }
     /*
     5. 피
@@ -324,6 +440,8 @@ public class ScoreManager : MonoBehaviour
 
         if (pi == 10)
         {
+            pi_UI.SetActive(true);
+            Invoke("pi_", 1f);
             score = score + 1;
             if (state_7) goStop();
         }
@@ -366,5 +484,9 @@ public class ScoreManager : MonoBehaviour
 
 
     }
-  
+    void pi_()
+    {
+        pi_UI.SetActive(false);
+    }
+
 }
