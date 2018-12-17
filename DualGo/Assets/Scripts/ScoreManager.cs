@@ -212,6 +212,7 @@ public class ScoreManager : MonoBehaviour
             hongdan_UI.SetActive(true);
             Invoke("hongdan_", 1f);
             if (state_7) goStop();
+            hongdan = 0;
         }
     }
     public void getChungdan()
@@ -291,60 +292,60 @@ public class ScoreManager : MonoBehaviour
         switch (go_num)
         {
             case 0: // 1고
+                Debug.Log("1고");
                 go_num = 1;
                 score++;
                 go1_UI.SetActive(true);
                 Invoke("go1_", 1f);
-                go1_state = 1;
                 break;
             case 1: // 2고
+                Debug.Log("2고");
                 go_num = 2;
                 score++;
                 go2_UI.SetActive(true);
                 Invoke("go2_", 1f);
-                go2_state = 1;
                 break;
             case 2: // 3고
+                Debug.Log("3고");
                 go_num = 3;
                 multiple = multiple * 2;
                 go3_UI.SetActive(true);
                 Invoke("go3_", 1f);
-                go3_state = 1;
                 break;
             case 3: // 4고
+                Debug.Log("4고");
                 go_num = 4;
                 multiple = multiple * 2;
                 go4_UI.SetActive(true);
-                Invoke("go4_", 1f);                
-                go4_state = 1;
+                Invoke("go4_", 1f);    
                 break;
             case 4: // 5고
+                Debug.Log("5고");
                 go_num = 5;
                 multiple = multiple * 2;
                 go5_UI.SetActive(true);
                 Invoke("go5_", 1f);
-                go5_state = 1;
                 break;
             case 5: // 6고
+                Debug.Log("6고");
                 go_num = 6;
                 multiple = multiple * 2;
                 go6_UI.SetActive(true);
                 Invoke("go6_", 1f);
-                go6_state = 1;
                 break;
             case 6: // 7고
+                Debug.Log("7고");
                 go_num = 7;
                 multiple = multiple * 2;
                 go7_UI.SetActive(true);
                 Invoke("go7_", 1f);
-                go7_state = 1;
                 break;
             case 7: // 8고
+                Debug.Log("8고");
                 go_num = 8;
                 multiple = multiple * 2;
                 go8_UI.SetActive(true);
                 Invoke("go8_", 1f);
-                go8_state = 1;
                 break;
         }
 
