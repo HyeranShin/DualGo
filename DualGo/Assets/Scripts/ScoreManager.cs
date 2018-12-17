@@ -121,8 +121,12 @@ public class ScoreManager : MonoBehaviour
         go7_state = 0;
         go8_state = 0;
 
-    ////////예원 추가///////
-    godori = 0;
+
+        btn_go.onClick.AddListener(goScore);
+        btn_stop.onClick.AddListener(goResultScene);
+
+        ////////예원 추가///////
+        godori = 0;
         tens = 0;
         pi = 0;
         double_pi = false;
@@ -212,7 +216,6 @@ public class ScoreManager : MonoBehaviour
             hongdan_UI.SetActive(true);
             Invoke("hongdan_", 1f);
             if (state_7) goStop();
-            hongdan = 0;
         }
     }
     public void getChungdan()
@@ -278,8 +281,6 @@ public class ScoreManager : MonoBehaviour
         ob_goorstop.SetActive(true);
         ob_gobtn.SetActive(true);
         ob_stopbtn.SetActive(true);
-        btn_go.onClick.AddListener(goScore);
-        btn_stop.onClick.AddListener(goResultScene);
     }
 
     void goScore()

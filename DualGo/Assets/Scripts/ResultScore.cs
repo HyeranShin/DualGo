@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ResultScore : MonoBehaviour {
 
-    public static int result = 100;
+    public static int result = 12;
     public Text text_score;
 
     // Use this for initialization
