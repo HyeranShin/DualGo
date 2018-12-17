@@ -11,4 +11,8 @@ public class MoveScene : MonoBehaviour {
         SceneManager.LoadScene (SceneName);
     }
 
+    public void onClick_mini()
+    {
+        SceneManager.GetActiveScene();
+    }
 }

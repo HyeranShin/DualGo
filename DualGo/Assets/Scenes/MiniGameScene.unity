@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 6045151}
   - component: {fileID: 6045150}
   - component: {fileID: 6045149}
-  - component: {fileID: 6045152}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -188,18 +187,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6045150}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6045152}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &6045150
@@ -236,36 +224,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 6045147}
   m_CullTransparentMesh: 0
---- !u!114 &6045152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 6045147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  canvas_godori: {fileID: 0}
-  canvas_gwang: {fileID: 0}
-  canvas_ssang: {fileID: 0}
-  canvas_bingo: {fileID: 0}
-  canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
 --- !u!1 &32010123
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +267,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 32010123}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -320,19 +278,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &32010126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,18 +341,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 32010127}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 32010125}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &32010127
@@ -1183,19 +1142,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 620131784}
   canvas_bingo: {fileID: 649305668}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 622625516}
-  image2: {fileID: 111098538}
-  image3: {fileID: 293944790}
-  image4: {fileID: 989198178}
-  image5: {fileID: 955705515}
-  button1: {fileID: 291381559}
-  button2: {fileID: 298861933}
-  button3: {fileID: 1998458311}
-  button4: {fileID: 1741788095}
-  button5: {fileID: 1321972789}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 2046707519}
+  gwang_wrong: {fileID: 1666836561}
+  ssang_wrong: {fileID: 1601863885}
+  gd_image1: {fileID: 108559448}
+  gd_image2: {fileID: 1117733962}
+  gd_image3: {fileID: 293944790}
+  gw_image1: {fileID: 749418181}
+  gw_image2: {fileID: 75860633}
+  gw_image3: {fileID: 1528501455}
+  gw_image4: {fileID: 989198178}
+  gw_image5: {fileID: 955705515}
+  ss_image1: {fileID: 622625516}
+  ss_image2: {fileID: 111098538}
+  ss_image3: {fileID: 1560221175}
+  gd_button1: {fileID: 6045149}
+  gd_button2: {fileID: 1043490469}
+  gd_button3: {fileID: 1388823153}
+  gw_button1: {fileID: 291381562}
+  gw_button2: {fileID: 1420233914}
+  gw_button3: {fileID: 1214413805}
+  gw_button4: {fileID: 1741788098}
+  gw_button5: {fileID: 1321972792}
+  ss_button1: {fileID: 32010126}
+  ss_button2: {fileID: 298861936}
+  ss_button3: {fileID: 1998458314}
 --- !u!4 &169754091
 Transform:
   m_ObjectHideFlags: 0
@@ -1322,7 +1293,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 200343479}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -1333,19 +1304,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 620131784}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &200343482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1984,7 +1967,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 291381559}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -1995,19 +1978,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &291381562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2046,18 +2041,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 291381563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 291381561}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &291381563
@@ -2278,7 +2262,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 298861933}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -2289,19 +2273,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &298861936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2340,18 +2336,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 298861937}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 298861935}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &298861937
@@ -5181,7 +5166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 811.9999, y: -462}
+  m_AnchoredPosition: {x: 183, y: -462}
   m_SizeDelta: {x: 60, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &790468956
@@ -6021,7 +6006,6 @@ GameObject:
   - component: {fileID: 1043490471}
   - component: {fileID: 1043490470}
   - component: {fileID: 1043490469}
-  - component: {fileID: 1043490468}
   m_Layer: 5
   m_Name: Button 2
   m_TagString: Untagged
@@ -6047,36 +6031,6 @@ RectTransform:
   m_AnchoredPosition: {x: -201, y: 326}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1043490468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1043490466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  canvas_godori: {fileID: 0}
-  canvas_gwang: {fileID: 0}
-  canvas_ssang: {fileID: 0}
-  canvas_bingo: {fileID: 0}
-  canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
 --- !u!114 &1043490469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6115,18 +6069,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1043490470}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1043490468}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1043490470
@@ -6761,7 +6704,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1214413802}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -6772,19 +6715,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &1214413805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6823,18 +6778,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1214413806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1214413804}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1214413806
@@ -7253,7 +7197,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1321972789}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -7264,19 +7208,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &1321972792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7315,18 +7271,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1321972793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1321972791}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1321972793
@@ -7772,7 +7717,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1384432913}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -7783,19 +7728,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 620131784}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!1 &1388823150
 GameObject:
   m_ObjectHideFlags: 0
@@ -7807,7 +7764,6 @@ GameObject:
   - component: {fileID: 1388823155}
   - component: {fileID: 1388823154}
   - component: {fileID: 1388823153}
-  - component: {fileID: 1388823152}
   m_Layer: 5
   m_Name: Button 3
   m_TagString: Untagged
@@ -7833,36 +7789,6 @@ RectTransform:
   m_AnchoredPosition: {x: -65, y: -244}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1388823152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1388823150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  canvas_godori: {fileID: 0}
-  canvas_gwang: {fileID: 0}
-  canvas_ssang: {fileID: 0}
-  canvas_bingo: {fileID: 0}
-  canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
 --- !u!114 &1388823153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7901,18 +7827,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1388823154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1388823152}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1388823154
@@ -8277,7 +8192,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420233911}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -8288,19 +8203,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &1420233914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8339,18 +8266,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1420233915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1420233913}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1420233915
@@ -9269,7 +9185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: -526}
+  m_AnchoredPosition: {x: 734, y: -526}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1560335058
@@ -9682,7 +9598,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1601863882}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -9693,19 +9609,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &1601863885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9744,18 +9672,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1601863884}
-        m_MethodName: click_wrong
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1666836558
@@ -9807,7 +9724,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1666836558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -9818,19 +9735,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &1666836561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9869,18 +9798,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1666836560}
-        m_MethodName: click_wrong
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1668549290
@@ -10483,7 +10401,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741788095}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -10494,19 +10412,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &1741788098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10545,18 +10475,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1741788099}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1741788097}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1741788099
@@ -10723,7 +10642,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1744727944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -10734,19 +10653,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!1 &1745361885
 GameObject:
   m_ObjectHideFlags: 0
@@ -11405,7 +11336,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1887912616}
-        m_MethodName: onClick
+        m_MethodName: onClick_mini
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11629,7 +11560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -896.00006, y: -533}
+  m_AnchoredPosition: {x: 734.2, y: -533}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998458313
@@ -11638,7 +11569,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1998458311}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
   m_Name: 
@@ -11649,19 +11580,31 @@ MonoBehaviour:
   canvas_ssang: {fileID: 0}
   canvas_bingo: {fileID: 0}
   canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
+  godori_wrong: {fileID: 0}
+  gwang_wrong: {fileID: 0}
+  ssang_wrong: {fileID: 0}
+  gd_image1: {fileID: 0}
+  gd_image2: {fileID: 0}
+  gd_image3: {fileID: 0}
+  gw_image1: {fileID: 0}
+  gw_image2: {fileID: 0}
+  gw_image3: {fileID: 0}
+  gw_image4: {fileID: 0}
+  gw_image5: {fileID: 0}
+  ss_image1: {fileID: 0}
+  ss_image2: {fileID: 0}
+  ss_image3: {fileID: 0}
+  gd_button1: {fileID: 0}
+  gd_button2: {fileID: 0}
+  gd_button3: {fileID: 0}
+  gw_button1: {fileID: 0}
+  gw_button2: {fileID: 0}
+  gw_button3: {fileID: 0}
+  gw_button4: {fileID: 0}
+  gw_button5: {fileID: 0}
+  ss_button1: {fileID: 0}
+  ss_button2: {fileID: 0}
+  ss_button3: {fileID: 0}
 --- !u!114 &1998458314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11700,18 +11643,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1998458315}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998458313}
-        m_MethodName: mini_click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1998458315
@@ -11757,7 +11689,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2046707517}
   - component: {fileID: 2046707519}
-  - component: {fileID: 2046707518}
   m_Layer: 0
   m_Name: Wrong
   m_TagString: Untagged
@@ -11788,36 +11719,6 @@ Transform:
   m_Father: {fileID: 1303707423}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2046707518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2046707516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c941158c710f4794b898c8e538b88e2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  canvas_godori: {fileID: 0}
-  canvas_gwang: {fileID: 0}
-  canvas_ssang: {fileID: 0}
-  canvas_bingo: {fileID: 0}
-  canvas_wrong: {fileID: 600807989}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  image3: {fileID: 0}
-  image4: {fileID: 0}
-  image5: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
-  button5: {fileID: 0}
-  godori: 0
-  gwang: 0
-  ssang: 0
 --- !u!114 &2046707519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11856,18 +11757,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2046707518}
-        m_MethodName: click_wrong
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &2089306737

@@ -28,7 +28,7 @@ public class ScoreManager : MonoBehaviour
     public GameObject go2_UI;
     public GameObject go3_UI;
     public GameObject go4_UI;
-    public GameObject go5_UI;   
+    public GameObject go5_UI;
     public GameObject go6_UI;
     public GameObject go7_UI;
     public GameObject go8_UI;
@@ -121,8 +121,12 @@ public class ScoreManager : MonoBehaviour
         go7_state = 0;
         go8_state = 0;
 
-    ////////예원 추가///////
-    godori = 0;
+
+        btn_go.onClick.AddListener(goScore);
+        btn_stop.onClick.AddListener(goResultScene);
+
+        ////////예원 추가///////
+        godori = 0;
         tens = 0;
         pi = 0;
         double_pi = false;
@@ -212,7 +216,6 @@ public class ScoreManager : MonoBehaviour
             hongdan_UI.SetActive(true);
             Invoke("hongdan_", 1f);
             if (state_7) goStop();
-            hongdan = 0;
         }
     }
     public void getChungdan()
@@ -278,8 +281,6 @@ public class ScoreManager : MonoBehaviour
         ob_goorstop.SetActive(true);
         ob_gobtn.SetActive(true);
         ob_stopbtn.SetActive(true);
-        btn_go.onClick.AddListener(goScore);
-        btn_stop.onClick.AddListener(goResultScene);
     }
 
     void goScore()
@@ -317,7 +318,7 @@ public class ScoreManager : MonoBehaviour
                 go_num = 4;
                 multiple = multiple * 2;
                 go4_UI.SetActive(true);
-                Invoke("go4_", 1f);    
+                Invoke("go4_", 1f);
                 break;
             case 4: // 5고
                 Debug.Log("5고");
@@ -349,7 +350,7 @@ public class ScoreManager : MonoBehaviour
                 break;
         }
 
-        
+
     }
 
     void goResultScene()
